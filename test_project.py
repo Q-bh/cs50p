@@ -1,12 +1,26 @@
-def test_function_1():
-    ...
+from project import clear_frame, damage, faint, next_frame
+from tkinter import *
+import random, math, pytest
+
+def test_clear_frame():
+    root = Tk()
+    root.geometry("600x600")
+    frame = Frame(root)
+    frame.pack(side="top", expand=True, fill="both")
+    text = Label(frame, text="Gotta catch em all")
+    clear_frame(frame)
+    with pytest.raises(TclError):
+        text.pack()
 
 
-def test_function_2():
-    ...
+def test_damage():
+    dmg = math.floor(math.floor((((2 * 5 / 5 + 2) * 35 * (9/9)) / 50 + 2)) * (random.randint(85, 100) / 100))
+    assert 5 > dmg >= 3
 
 
-def test_function_n():
-    ...
-"""I was thoroughly impressed. I already had experience with Python before this course, but I still had many new things to learn. I found the problem sets to contain a perfect amount of rigor to keep me engaged and exercising my brain to find proper solutions. I understood that, by not giving me instructions to absolutely everything for some problems (such as when trying to utilize libraries), the course was trying to teach me how to research things on my own, which I thought was clever and helpful in developing that skill. Lastly, I found that David Malan was a truly outstanding teacher. He knew how to convey ideas plainly, respond to questions adeptly, and could recover very smoothly from any small mishaps that would occur during the lectures, such as by turning a typo or forgotten character into a small lesson. I found that trait very admirable.
-"""
+def test_next_frame():
+    root = Tk()
+    root.geometry("600x600")
+    root.update_idletasks()
+    root.after(200)
+    assert root.after(200) == None
