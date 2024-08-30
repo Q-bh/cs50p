@@ -1,8 +1,8 @@
     # POKé50
-    #### Video Demo:  <URL HERE>
+    #### Video Demo:  https://www.youtube.com/watch?v=R4x3KD7vt0k
     #### Description:
     This is POKé50!
-    POKé50 is a simplified recreation of the first rival battle from the Pokémon FireRed and LeafGreen videogame with Python.
+    POKé50 is a simplified recreation of the first rival battle from the Pokémon FireRed and LeafGreen video game with Python.
 
     Included features:
     - FireRed and LeafGreen sprites (Red, Blue, Professor Oak, Pokémon, Poké Balls, battle background)
@@ -13,7 +13,7 @@
     - Correct and fully functional damage calculation system, accounting for critical hits and stat decreases (Critical hits will bypass attack decreases)
     - Simplified animations (Entering battle, Pokémon moves, Pokémon fainting, ending battle)
     - Simplified but mostly canonical dialogue, altering based on rival defeat or victory
-    - Options to view a help text that reprints the README.md, quit the program, return to the main menu after the rival battle
+    - Options to view a help text that reprints a simplified version of README.md, quit the program, return to the main menu after the rival battle
 
     Excluded features:
     - Speed, Special Attack, and Special Defense stats
